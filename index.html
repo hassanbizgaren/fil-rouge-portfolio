@@ -1,73 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <script src="dynamic.js"></script>
 </head>
-<body>
-    <nav>
-        <img src="" alt="logo for my portfolio">
-        <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+
+<body class="font-sans bg-gray-100">
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center p-6 bg-white shadow-md">
+        <img src="Me.webp" alt="logo for my portfolio" class="w-12 h-12">
+        <ul class="flex space-x-6">
+            <li><a href="#about" class="text-gray-800 hover:text-blue-600">About</a></li>
+            <li><a href="#projects" class="text-gray-800 hover:text-blue-600">Projects</a></li>
+            <li><a href="#contact" class="text-gray-800 hover:text-blue-600">Contact</a></li>
         </ul>
-        <button type="submit">Dowload CV</button>
+        <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500">
+            Download CV
+        </button>
     </nav>
-    <main class="first-page">
-        <h1>HI. I'm HASSAN</h1>
-        <h4>I'm a junior frontend developer (JAVASCRIPT,CSS)</h4>
-        <h6>SIDI IFNI,MOROCCO</h6>
-        <h6>Available to Work</h6>
-        <img src="Me.webp" alt="my image">
+
+    <!-- First Page -->
+    <main class="first-page flex flex-col items-center justify-center h-screen bg-gray-50">
+        <h1 class="text-5xl font-bold text-gray-900">HI. I'm HASSAN</h1>
+        <h4 class="text-xl text-gray-700 mt-4">I'm a junior frontend developer (JAVASCRIPT, CSS)</h4>
+        <h6 class="text-md text-gray-500 mt-2">SIDI IFNI, MOROCCO</h6>
+        <h6 class="text-md text-gray-500">Available to Work</h6>
+        <img src="Me.webp" alt="my image" class="mt-8 rounded-full w-48 h-48">
     </main>
-<main class="second-page">
-    <h3>About me</h3>
-    <img src="portfolio.png" alt="my image">
-    <h6>Curious about me? Here you have it:</h6>
-    <p>I am a passionate developer specializing in UI development (HTML,CSS,JS).</p>
-    <P>I am passionate about bringing the technical and visual aspects of digital products to life. and high-performance code are important to mr.<br> I have always had a passion for working in the IT field and also participing in hackathons for entrepreurship and cybersecurity and playing CTF.</P>
-    <p>When I'm not in full-on developer mode, you can find me learning something new, You can follow me on Gihub</p>
-    <p>One last thing, I'm available for work, so feel free to reach out and say hello </p>
-</main>
-<main class="third-page">
-    <h3>SKILLS</h3>
-    <center>The skills, tools and technologies I use:</center>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-</main>
-<main class="experience">
-    <nav class="tanara">
-        <img src="" alt="">
-    </nav>
-    <nav class="formation">
-        <img src="" alt="">
-    </nav>
-    <nav class="souss-massa">
-        <img src="" alt="">
-    </nav>
-    <nav class="citoyen">
-        <img src="" alt="">
-    </nav>
-    <nav class="ambassador">
-        <img src="" alt="">
-    </nav>
-    <nav class="encrypt">
-        <img src="" alt="">
-    </nav>
-</main>
-<main class="project">
 
-</main>
-<main class="get-touch">
+    <!-- Second Page - About -->
+    <main id="about" class="second-page py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold text-gray-800 mb-6">About Me</h3>
+            <img src="portfolio.png" alt="my image" class="w-48 h-48 mx-auto mb-6 rounded-full">
+            <h6 class="text-lg text-gray-700 mb-4">Curious about me? Here you have it:</h6>
+            <p class="text-gray-600 mb-4">I am a passionate developer specializing in UI development (HTML, CSS, JS).</p>
+            <p class="text-gray-600 mb-4">I am passionate about bringing the technical and visual aspects of digital products to life. High-performance code is important to me. I participate in hackathons for entrepreneurship and cybersecurity and play CTFs.</p>
+            <p class="text-gray-600">When I'm not in full-on developer mode, you can find me learning something new. You can follow me on GitHub.</p>
+            <p class="text-gray-600 mt-4">One last thing, I'm available for work, so feel free to reach out and say hello!</p>
+        </div>
+    </main>
 
-</main>
-<footer>2024| Coded by BIZGRAEN Hassan</footer>
+    <!-- Third Page - Skills -->
+    <main id="skills" class="third-page py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold text-gray-800 mb-6">Skills</h3>
+            <p class="text-gray-600 mb-4">The skills, tools, and technologies I use:</p>
+            <div class="flex justify-center space-x-6">
+                <img src="" alt="" class="w-12 h-12">
+                <img src="" alt="" class="w-12 h-12">
+                <img src="" alt="" class="w-12 h-12">
+                <img src="" alt="" class="w-12 h-12">
+                <img src="" alt="" class="w-12 h-12">
+            </div>
+        </div>
+    </main>
+
+    <!-- Experience -->
+    <main class="experience py-20 bg-white">
+        <div class="container mx-auto flex flex-wrap justify-center space-x-6">
+            <nav class="tanara">
+                <img src="" alt="" class="w-12 h-12">
+            </nav>
+            <nav class="formation">
+                <img src="" alt="" class="w-12 h-12">
+            </nav>
+            <nav class="souss-massa">
+                <img src="" alt="" class="w-12 h-12">
+            </nav>
+            <nav class="citoyen">
+                <img src="" alt="" class="w-12 h-12">
+            </nav>
+            <nav class="ambassador">
+                <img src="" alt="" class="w-12 h-12">
+            </nav>
+            <nav class="encrypt">
+                <img src="" alt="" class="w-12 h-12">
+            </nav>
+        </div>
+    </main>
+
+    <!-- Projects -->
+    <main id="projects" class="project py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold text-gray-800 mb-6">Projects</h3>
+            <!-- Add project content here -->
+        </div>
+    </main>
+
+    <!-- Get in Touch -->
+    <main id="contact" class="get-touch py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold text-gray-800 mb-6">Get in Touch</h3>
+            <!-- Add contact form or details here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>2024 | Coded by BIZGRAEN Hassan</p>
+    </footer>
 </body>
+
 </html>
