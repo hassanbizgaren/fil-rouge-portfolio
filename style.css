@@ -1,8 +1,9 @@
-* {
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
+
 .logo {
 size: 10px;
 }
@@ -16,8 +17,9 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     background-color: #222;
+    /* width: 100%; */
 }
 
 nav ul {
@@ -33,8 +35,17 @@ nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
 }
-.skills image {
-    font-size: 2px;
+.experience-section {
+    display: flex;
+    justify-content: space-between;
+    /*padding: 10px 20px;*/
+    background-color: #222;
+     /* flex-wrap: wrap;  */
+} 
+
+.item-image{
+flex-basis: 30%;
+max-width: 100%;
 }
 
 form {
