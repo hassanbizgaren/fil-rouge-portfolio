@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.logo {
+size: 10px;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -30,8 +33,9 @@ nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
 }
-
-
+.skills image {
+    font-size: 2px;
+}
 
 form {
     display: flex;
@@ -64,11 +68,16 @@ form button {
     border-radius: 5px;
     cursor: pointer;
 }
-
+p {
+    font-size: 30px;
+}
 footer {
     padding: 20px;
     text-align: center;
     background-color: #222;
+}
+h1 h2 h4 {
+    font-size: 50px;
 }
 /*button*/
 .button-17 {
