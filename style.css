@@ -36,6 +36,11 @@ nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
 }
+
+.skill-image {
+  width: 10%;
+  height: 10%;
+}
 .experience-section {
     display: flex;
     justify-content: space-between;
@@ -325,4 +330,8 @@ box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3p
 }
 .user-info small {
   color: #545d7a;
+}
+
+.get-touch {
+  margin: 10px;
 }
