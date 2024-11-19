@@ -147,7 +147,7 @@ form button {
   cursor: pointer;
 }
 p {
-  font-size: 30px;
+  font-size: 20px;
 }
 footer {
   padding: 20px;
@@ -490,39 +490,67 @@ p {
   height: auto;
 }
 
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
+  header nav {
+      flex-direction: column;
+      align-items: center;
   }
 
-  nav ul {
-    margin-bottom: 1rem;
+  header .menu {
+      flex-direction: column;
+      gap: 10px;
   }
 
-  .section {
-    flex-direction: column-reverse;
-    text-align: center;
+  header .button-17 {
+      margin-top: 10px;
   }
 
-  .hero-image {
-    margin-bottom: 2rem;
+  .skills-grid {
+      gap: 10px;
   }
 
-  .intro {
-    max-width: 100%;
+  .skills-grid img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .profile-picture img {
+      max-width: 250px;
   }
 
   .about-content {
-    padding: 0 1rem;
-  }
-
-  .skills-grid,
-  .experience-section {
-    display: flex;
-    flex-wrap: wrap;
+      padding: 10px;
   }
 }
-.second-page {
-  background-color: #222;
+
+@media (max-width: 480px) {
+  header nav {
+      padding: 10px;
+  }
+
+  header .menu {
+      font-size: 14px;
+  }
+
+  .hero-image {
+      max-width: 200px;
+  }
+
+  .skills-grid img {
+      width: 40px;
+      height: 40px;
+  }
+
+  .card {
+      margin: 10px;
+  }
+
+  .get-touch form {
+      padding: 10px;
+  }
+
+  footer {
+      font-size: 12px;
+  }
 }
