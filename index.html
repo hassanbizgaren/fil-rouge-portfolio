@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -40,7 +43,13 @@
             <h1>HI. I'm HASSAN</h1>
             <h2>I'm a junior frontend developer (JAVASCRIPT,CSS)</h2>
             <h3>SIDI IFNI,MOROCCO</h3>
-            <h3>Available to Work</h3>
+            <a href="https://www.instagram.com/bizgaren_hassan/"><button type="submit" class="button-13"
+                    role="button">Available to Work</button></a>
+            <div class="social">
+                <a href="https://www.instagram.com/bizgaren_hassan/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/hassanbizgaren"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hassan-bizgaren/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
         <div class="profile-picture">
             <img src="ressource/Me.webp" alt="my image" class="hero-image">
@@ -96,20 +105,20 @@
         <div class="experience-section">
 
             <div class="item-image"><a href=""><img src="ressource/tanara.png" alt="tanara image"></a></div>
-            <div class="item-image"><a href="https://web.facebook.com/share/p/1TYyy1uuY1/"><img src="ressource/formation.png"
-                    alt="YMA BRAND formation" ></a></div>
-                    <div class="item-image"><a
-                href="https://www.linkedin.com/posts/hassan-bizgaren_entrepreneurship-experience-digital-activity-7078102086206283776-bk-f?utm_source=share&utm_medium=member_desktop"><img
-                    src="ressource/soussmassa.png" alt="hackaton souss massa"></a></div>
-                    <div class="item-image"><a
-                href="https://www.linkedin.com/posts/hassan-bizgaren_i-had-the-honor-of-participating-in-the-bootcamp-activity-7229204489474375680-fd4o?utm_source=share&utm_medium=member_desktop"><img
-                    src="ressource/citoyen.png" alt="bootcamp citoyen" ></a></div>
-                    <div class="item-image"><a
-                href="https://www.linkedin.com/posts/hassan-bizgaren_i-am-honored-to-be-one-of-this-wonderful-activity-7245101986973454337-ERfV?utm_source=share&utm_medium=member_desktop"><img
-                    src="ressource/ambassador.png" alt="ambassador of citoyen" ></a></div>
-                    <div class="item-image"><a
-                href="https://www.linkedin.com/posts/hassan-bizgaren_i-am-very-proud-to-attend-my-second-activity-activity-7243386864756232192-r5pp?utm_source=share&utm_medium=member_desktop"><img
-                    src="ressource/cyberr.png" alt="encryptGON hackathon"></a></div>
+            <div class="item-image"><a href="https://web.facebook.com/share/p/1TYyy1uuY1/"><img
+                        src="ressource/formation.png" alt="YMA BRAND formation"></a></div>
+            <div class="item-image"><a
+                    href="https://www.linkedin.com/posts/hassan-bizgaren_entrepreneurship-experience-digital-activity-7078102086206283776-bk-f?utm_source=share&utm_medium=member_desktop"><img
+                        src="ressource/soussmassa.png" alt="hackaton souss massa"></a></div>
+            <div class="item-image"><a
+                    href="https://www.linkedin.com/posts/hassan-bizgaren_i-had-the-honor-of-participating-in-the-bootcamp-activity-7229204489474375680-fd4o?utm_source=share&utm_medium=member_desktop"><img
+                        src="ressource/citoyen.png" alt="bootcamp citoyen"></a></div>
+            <div class="item-image"><a
+                    href="https://www.linkedin.com/posts/hassan-bizgaren_i-am-honored-to-be-one-of-this-wonderful-activity-7245101986973454337-ERfV?utm_source=share&utm_medium=member_desktop"><img
+                        src="ressource/ambassador.png" alt="ambassador of citoyen"></a></div>
+            <div class="item-image"><a
+                    href="https://www.linkedin.com/posts/hassan-bizgaren_i-am-very-proud-to-attend-my-second-activity-activity-7243386864756232192-r5pp?utm_source=share&utm_medium=member_desktop"><img
+                        src="ressource/cyberr.png" alt="encryptGON hackathon"></a></div>
         </div>
     </section>
 
@@ -119,16 +128,21 @@
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project Title 1</h3>
+                    <img src="ressource/project01.png" alt="Project 1">
+                    <h3>Fil Rouge project</h3>
                     <p>Brief description of the project goes here.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class:"project-button">
+                        <button style="--content: 'view all project';" href="https://twitter.com/kamildyrek">
+                            <div class="left"></div>
+                            view all project
+                            <div class="right"></div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
     </section>
     <main class="blog">
-        <center>Blog</center>
         <div class="container">
             <div class="card">
                 <div class="card-header">
@@ -200,7 +214,9 @@
             </div>
     </main>
     <main class="get-touch">
-        <center>Get in Touch</center>
+        <h3>
+            <center>Get in Touch</center>
+        </h3>
         <div class="form-container">
             <form id="contactForm" action="https://formspree.io/f/xzzbvpvp" method="post">
                 <label for="name">Name</label>

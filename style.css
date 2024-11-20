@@ -98,6 +98,42 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* socila media style */
+.social {
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  gap: 30px; /* Space between the icons */
+  margin-top: 20px; /* Adds space above the social links */
+}
+
+/* Link styling */
+.social a {
+  color: #ffffff; /* Default icon color */
+  font-size: 30px; /* Icon size */
+  text-decoration: none; /* Removes underline from links */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for links */
+.social a:hover {
+  color: #0077b5; /* Changes color on hover (LinkedIn blue as an example) */
+  transform: scale(1.2); /* Slightly enlarges icon on hover */
+}
+
+/* Individual icon colors (optional) */
+.social a:nth-child(1):hover {
+  color: #E1306C; /* Instagram color */
+}
+
+.social a:nth-child(2):hover {
+  color: #171515; /* GitHub color */
+}
+
+.social a:nth-child(3):hover {
+  color: #0077b5; /* LinkedIn color */
+}
+
+
 .skill-image {
   width: 10%;
   height: 10%;
@@ -524,6 +560,40 @@ p {
   }
 }
 
+/*available to work button*/
+.button-13 {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 140px;
+}
+
+.button-13:hover {
+  background-color: #f7fafa;
+}
+
+.button-13:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
 /*project section*/
 
 .project-section {
@@ -586,22 +656,7 @@ p {
   color: #666;
 }
 
-.project-card .btn {
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.5rem 1rem;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
 
-.project-card .btn:hover {
-  background-color: #0056b3;
-}
 
 .project-card:hover {
   transform: scale(1.05);
