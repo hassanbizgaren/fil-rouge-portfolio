@@ -107,7 +107,7 @@ nav ul li a {
   justify-content: space-between;
   /*padding: 10px 20px;*/
   background-color: #222;
-  flex-wrap: wrap;  
+  flex-wrap: wrap; 
 }
 
 .item-image {
