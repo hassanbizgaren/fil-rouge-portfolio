@@ -382,6 +382,8 @@ h1 h2 h4 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-top: 12px;
+  margin-right: 20px;
 }
 
 .button-86::after,
@@ -696,7 +698,9 @@ a:hover {
   line-height: 1.6;
   background-color: #f4f4f9;
   color: #333;
+  opacity: ;
 }
+
 
 /* Project Section */
 #projects {
@@ -722,7 +726,7 @@ a:hover {
 
 /* Project Card */
 .project-card {
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
