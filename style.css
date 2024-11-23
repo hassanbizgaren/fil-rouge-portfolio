@@ -757,8 +757,12 @@ a:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/*media*/
+.project-items {
+display: flex;
+align-items: center;
+}
 
+/*media*/
 @media (max-width: 480px) {
   header nav {
     padding: 10px;
