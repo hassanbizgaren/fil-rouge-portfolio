@@ -1,20 +1,76 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General body styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #333;
-  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */
 }
 
-.image-section {
-  width: 350px;
-  height: 350px;
-  margin-top: 50px;
-  margin-left: 500px;
+/* Blog container styling */
+.blog-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e; /* Slightly lighter than the background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Image styling */
+.blog-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Title styling */
+.blog-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff; /* Accent color for the title */
+}
+
+/* Paragraph styling */
+.blog-content {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #cfcfcf;
+}
+
+/* Back button styling */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #06d2ed;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .blog-container {
+      margin: 20px;
+      padding: 15px;
+  }
+  .blog-title {
+      font-size: 24px;
+  }
+  .blog-content {
+      font-size: 14px;
+  }
+}
