@@ -700,7 +700,6 @@ a:hover {
   color: #333;
 }
 
-
 /* Project Section */
 
 #projects {
@@ -758,8 +757,8 @@ a:hover {
 }
 
 .project-items {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /*media*/
