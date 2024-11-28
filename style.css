@@ -209,11 +209,11 @@ nav ul li a {
 }
 .experience-section {
   display: flex;
-  justify-content: space-between;
-  /*padding: 10px 20px;*/
+align-items: normal;
   background-color: #222;
   flex-wrap: wrap;
 }
+
 .experince {
   background-color: #222;
 }
@@ -225,7 +225,8 @@ nav ul li a {
 
 .item-image {
   flex-basis: 30%;
-  max-width: 100%;
+  max-width: 70%;
+  max-height: 70%;
 }
 
 form {
@@ -346,20 +347,6 @@ h1 h2 h4 {
 .button-17:disabled {
   box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
-}
-
-/*experince animation*/
-
-.item-image {
-  transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -webkit-transition: transform 0.5s ease-in-out;
-}
-
-.item-image:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
 }
 
 /*form button animation*/
@@ -598,10 +585,12 @@ p {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if needed */
+  background-color: #333; /* Background color for visualization */
+  height: 50vh; /* Adjust height as needed */
+  color: #fff; /* Text color */
 }
 
 .skills-grid img {
