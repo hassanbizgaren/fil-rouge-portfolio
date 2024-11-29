@@ -209,7 +209,7 @@ nav ul li a {
 }
 .experience-section {
   display: flex;
-align-items: normal;
+justify-content: center;
   background-color: #222;
   flex-wrap: wrap;
 }
